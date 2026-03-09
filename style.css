@@ -1,20 +1,12 @@
-
 body {
     background-color: #000;
     color: #E7E9EA;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 .navbar {
     background-color: #000 !important;
     border-bottom: 1px solid #2F3336;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #ffffff !important;
 }
 
 .nav-link {
@@ -26,54 +18,82 @@ body {
     color: #0d8ddb !important;
 }
 
-
 .hero-section {
     height: 80vh;
-
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    align-items: center;       
-
-    text-align: center;
     background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
+.card {
+    background-color: #16181C;
+    border: 1px solid #2F3336;
+    border-radius: 12px;
 }
 
-.hero-section p {
-    color: #E7E9EA;
-}
+/* FLEXBOX SECTION */
 
 .flex-about {
-    display: flex;             
-    flex-direction: row;       
-    flex-wrap: wrap;            
-    align-items: center;        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 40px;
 }
 
 .about-text {
-    flex: 1;                    
-    order: 1;                  
+    flex: 1;
+    order: 1;
 }
 
 .about-image {
     flex: 1;
-    order: 2;                  
+    order: 2;
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 12px;
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 300px;
+}
+
+.flex-activities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.activity-box {
+    background-color: #16181C;
+    padding: 20px;
+    flex: 1 1 250px;
+}
+
+.flex-guide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.guide-box {
+    background-color: #16181C;
+    padding: 20px;
+    flex: 1;
+}
+
+.grow-box {
+    flex-grow: 2;
 }
 
 footer {
     border-top: 1px solid #2F3336;
     color: #71767B;
-    background-color: #000;
 }
